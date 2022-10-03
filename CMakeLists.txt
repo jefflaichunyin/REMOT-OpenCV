@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(aedat-reader VERSION 0.1.0)
+project(remot_opencv VERSION 0.1.0)
 
 include(CTest)
 enable_testing()
