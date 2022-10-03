@@ -1,7 +1,8 @@
 #include <iostream>
 
-
 #include "file_reader.hpp"
+
+// modified from https://github.com/norse/aestream/blob/main/src/aedat4.hpp
 
 File_Reader::File_Reader(std::string filename, std::queue<Event> *event_queue)
 {
@@ -88,7 +89,6 @@ const EventPacket * File_Reader::read_packet(int &event_cnt){
         event_cnt = 0;
         return nullptr;
     }
-
 
     // event data
     size_t read_len = pkt_size;
